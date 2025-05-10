@@ -1,0 +1,56 @@
+.contactpage{
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+    
+}
+.optionalcontact{
+    margin-left: 20px;
+    max-width: 380px;
+    padding: 5px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.optionalcontact p {
+    margin: 2px;
+}
+fieldset{
+    padding: 5px;
+    margin: auto;
+}
+
+form ul{
+    font-size: 0.9rem;
+    list-style:none;
+    min-width: 200px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+form{
+    width: auto;
+    margin-top: 110px;
+    display: flex;
+    flex-wrap: wrap;
+}
+form li{
+    margin: 6px;
+    display: flex;
+    max-width: 360px;
+    justify-content: space-between;
+}
+input{
+    min-width: 220px;
+    border: 1px solid black;
+}
+textarea{
+    max-width: 400px;
+    border: 1px solid black;
+}
+#btn{
+    margin: 10px;
+    font-size: 1rem;
+    margin-bottom: 1px;
+}
