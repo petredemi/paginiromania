@@ -183,7 +183,7 @@ nav >div:hover{
     margin: 0px;
     font-size: 1.1rem;
     padding: 2px;
-    color: rgb(221, 221, 221);
+    color: white;
 }
 .firstpage_webpages{
     display: flex;
