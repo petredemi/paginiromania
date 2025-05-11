@@ -2,6 +2,7 @@
 body{
     padding: 0px;
     margin: 0px;
+    font-size: 18px;
 }
 
 h1{
@@ -123,7 +124,6 @@ nav >div:hover{
 }
 .content{
     display: block;
-    flex-direction: ccolumn;
     margin: auto;
     margin-top: 70px;
     min-height: 700px;
@@ -149,10 +149,8 @@ nav >div:hover{
     justify-content: start;
     background-color: rgb(2, 119, 100);
     border-radius: 20px;
-    width: 550px;
-    margin: aauto;
+    width: 580px;
     margin-left: 20px;
-    
     padding: 10px;
     box-shadow: 2px 2px 2px black;
     margin-top: 60px;
@@ -163,8 +161,7 @@ nav >div:hover{
     align-items: start;
     justify-content: center;
     background-color: rgba(47, 46, 46, 0.497);
-    width: 550px;
-    margin: aauto;
+    width: 580px;
     margin-left: 20px;
     padding: 10px;
     box-shadow: 2px 2px 2px black;
@@ -181,7 +178,7 @@ nav >div:hover{
 }
 .intro > p, .intro1 >p{
     margin: 0px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding: 2px;
     color: white;
 }
