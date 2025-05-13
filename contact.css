@@ -16,6 +16,7 @@
 }
 .optionalcontact p {
     margin: 2px;
+    font-size: 1rem;
 }
 fieldset{
     padding: 5px;
@@ -41,6 +42,9 @@ form li{
     max-width: 360px;
     justify-content: space-between;
 }
+label{
+    font-size: 1rem;
+}
 input{
     min-width: 270px;
     border: 1px solid black;
@@ -50,11 +54,12 @@ input{
 textarea{
     max-width: 400px;
     border: 1px solid black;
+    font-size: 0.9rem;
 }
 #btn{
     margin: 15px;
     margin-bottom: 1px;
 }
 button{
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
