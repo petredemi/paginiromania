@@ -180,9 +180,10 @@ nav >div:hover{
 }
 .intro > p, .intro1 >p{
     margin: 0px;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.3;
     font-family:'Times New Roman', Times, serif;
-    padding: 2px;
+    padding: 1px;
 }
 .firstpage_webpages{
     display: flex;
