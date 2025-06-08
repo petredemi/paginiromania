@@ -59,15 +59,19 @@ nav >div{
     text-shadow: 1px 1px 1px black;
     padding: 2px;
     cursor: pointer;
+    border-radius: 5px;
 }
 nav a{
-    color: darkblue;
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    padding: 4px;
     
 }
 nav >div:hover{
-    background-color: rgb(246, 237, 143);
-    color: rgb(49, 138, 5);
+    background-color: rgba(45, 6, 49, 0.327);
+    zoom: 1.2;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 .active >a{
     color: red;
@@ -148,12 +152,12 @@ nav >div:hover{
     flex-direction: column;
     align-items:start;
     justify-content: start;
-    background-color: darkcyan;
+    background-color: rgba(0, 139, 139, 0);
     border-radius: 20px;
     width: 580px;
     margin-left: 20px;
     padding: 10px;
-    box-shadow: 2px 2px 10px black;
+    box-shadow: 2px 2px 10px blacks;
     margin-top: 60px;
 }
 .intro1{
@@ -161,11 +165,11 @@ nav >div:hover{
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    background-color: rgba(130, 126, 126, 0.497);
+    background-color: rgba(130, 126, 126, 0);
     width: 580px;
     margin-left: 20px;
     padding: 10px;
-    box-shadow: 1px 1px 10px black;
+    box-shadow: 1px 1px 10px blackk;
     margin-top: 40px;
     border-radius: 20px;
 
@@ -288,11 +292,11 @@ footer a{
         display: block;
     }
     nav{
-        max-width: 100px;
+        max-width: 150px;
         display: none;
         position:fixed;
         right: 0%;
-        background-color:rgba(110, 238, 165, 0.767);
+        background-color:rgba(26, 9, 40, 0.52);
         z-index: 2;
         padding: 8px;
     }
