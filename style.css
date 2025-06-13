@@ -25,7 +25,7 @@ h3{
     height:fit-content;
 }
 .toppage{
-    background-color:rgb(0, 206, 209);
+    background-color:darkcyan;
     position: fixed;
     width: 100vw;
     z-index: 2;
@@ -91,7 +91,7 @@ nav >div:hover{
     box-shadow: 1px 1px 10px black;
     background: linear-gradient(45deg, transparent 170px, red 0);
     max-width: 300px;
-    background-color: #ffebcd;
+    background-color: #f9f9f9;
 }
 .menu{
     text-align: end;
@@ -291,13 +291,17 @@ footer a{
         display: block;
     }
     nav{
-        max-width: 150px;
+        width: 150px;
         display: none;
         position:fixed;
+        justify-content: center;
+        flex-direction: column;
         right: 0%;
+        margin-right: 0px;
         background-color:rgba(26, 9, 40, 0.52);
         z-index: 2;
         padding: 8px;
+
     }
     nav >div{
         margin: 6px;
