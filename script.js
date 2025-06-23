@@ -20,7 +20,7 @@ let divwidth = toppage.offsetWidth //width of div
 let menu = 0
 dropbtn.addEventListener('click', (e) => {
     divwidth = toppage.offsetWidth
-    if(divwidth < 450){
+    if(divwidth < 550){
         if(menu == 0){
             navbar.setAttribute('style', 'display:flex')
             menu = 1
@@ -32,13 +32,13 @@ dropbtn.addEventListener('click', (e) => {
 })
 navbar.addEventListener('click', (e) => {
     divwidth = toppage.offsetWidth
-    if(divwidth < 450){
+    if(divwidth < 550){
         navbar.setAttribute('style', 'display:none')
     }
 })
 dropmenu.addEventListener('mouseleave', (e) => {
     divwidth = toppage.offsetWidth
-    if(divwidth < 450){
+    if(divwidth < 550){
     navbar.setAttribute('style', 'display:none')
     }
 })

@@ -127,11 +127,12 @@ nav >div:hover{
 }
 .menu{
     text-align: end;
+    border: 1px solid darkcyan;
 }
 .dropbutton{
     display: none;
     background-color:darkcyan;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1pxx 1px 5px wblack;
 }
 .dropbutton >img{
     height: 40px;
@@ -322,7 +323,7 @@ footer a{
     }
 
 }
-@media(max-width: 450px){
+@media(max-width: 550px){
     .firstpage{
         background-image: urll('./pictures/mobile.jpg');
         background-size: cover;
