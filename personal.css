@@ -6,6 +6,19 @@
     margin-top: 110px;
     margin-bottom: 100px;
 }
+.nume{
+    font-size: 1.8rem;
+    color: rgb(27, 1, 50);
+    font-weight: 550;
+}
+.aboutme >img{
+    height: 200px;
+    float: left;
+    margin-right: 15px;
+    margin-top: 5px;
+    border: 2px solid black;
+    padding: 3px;
+}
 .personalpage  p, h4{
     margin: 3px;
     margin-top: 10px;
