@@ -132,25 +132,12 @@ nav >div:hover{
 .dropbutton{
     display: none;
     background-color:darkcyan;
-    box-shadow: 1pxx 1px 5px wblack;
+    border: none;
 }
 .dropbutton >img{
-    height: 40px;
-    width: 40px;
+    height: 40pxx;
+    width: 40pxx;
 
-}
-.by{
-    position:absolute;
-    text-align: end;
-    font-size: 0.9rem;
-    color: rgb(0, 0, 0);
-    max-width: 700px;
-    margin:auto;
-    margin-top: 4px;
-    z-index: 1;
-    transform: translateY(-20px);
-    right: 2%;
-    margin-right: 10px;
 }
 .firstpage{
     background-image: urll('./pictures/mobile1.jpg');
@@ -172,11 +159,11 @@ nav >div:hover{
     background-image: linear-gradientl(90deg, rgba(255, 255, 255, 0.997)20%, rgba(255, 255, 255, 0.256),rgb(255, 255, 255));
 }
 .logo1{
-    margin-top: 60px;
-    margin-left: 20px;
-    margin-bottom: 50px;
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-bottom: 0px;
     max-width: 700px;
-    font-size: 2.6rem;
+    font-size: 2rem;
     text-shadow: 4px 4px 10px black;
     color: rgb(255, 255, 255);
     font-weight: 600;
@@ -367,3 +354,82 @@ footer a{
         margin-top: 40px;
     }
 }
+.log{
+    margin-top: 60px;
+    margin-bottom: 80px;
+    border: 2pxx solid red;
+}
+
+.cube{
+    float: left;
+    transform: translateY(2px);
+    color: rgb(251, 56, 56);
+    text-shadow: 1px 1px 0px black;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 1px;
+    border-radius: 20% 20%;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-right: 60px;
+    width: fit-content;
+
+
+}
+.cube1{
+    display: flex;
+    position: absolute;
+    font-size: 1.3rem;
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(10, 16, 55);
+    box-shadow: 1px 1px 1px black;
+    translate:10px;
+    animation-name: exemple1;
+    margin-top: 1px;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    border-radius: 50%;
+    z-index: 1;
+    scale: 1;
+    background-color: dimgray;
+
+}
+.cube2{
+    display: flex;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(225, 23, 23);
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px black;
+    animation-name: exemple2;
+    translate: 40px;
+    margin-top: 1px;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    background-color:darkcyan;
+    scale: 1;
+}
+.cube2 >p{
+    transform: rotateY(180deg);
+}
+@keyframes exemple1{
+    50%{z-index: 0;}
+   100%{transform: perspective(400px) translateZ(0px) rotateY(360deg);}
+}
+
+@keyframes exemple2{
+    100%{z-index: 0;}
+    100%{transform: perspective(400px) translateZ(0px) rotateY(360deg);}
+   }
