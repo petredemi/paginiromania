@@ -25,15 +25,16 @@ body{
 }
 .portfolio > div{
     margin-bottom: 10px;
-    box-shadow: 1px 1px 8px black;
+    box-shadow: 1px 1px 6px black;
     border: 1px solid black;
+    border-radius: 5px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
 }
 .portfolio >div> img{
-    min-width: 250px;
-    max-width: 380px;
+    min-width: 230px;
+    max-width: 360px;
     margin: 1px;
 }
 .portfolio >div>img:hover{
