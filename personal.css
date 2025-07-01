@@ -12,7 +12,7 @@
     font-weight: 550;
 }
 .aboutme >img{
-    height: 200px;
+    max-height: 240px;
     float: left;
     margin-right: 15px;
     margin-top: 5px;
