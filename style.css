@@ -7,10 +7,18 @@ body{
 .back{
     background-size:contain;
     margin-top: 0px;
-    background-position:centerrs;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    background-position:centers;
     background-repeat: repeatf;
-    background-image: url('./pictures/mobile1.jpg');
+    background-image: urls('./pictures/mobile1.jpg');
 
+}
+.background1{
+    height: 300px;
+    background-color: cornflowerblue;
+    left: 0;
 }
 .seo{
     text-align: center;
@@ -59,6 +67,7 @@ h3{
 }
 .toppage{
     background-color:rgb(0, 139, 139);
+    background-color: rgb(55, 39, 67);
     position: fixed;
     width: 100vw;
     z-index: 2;
@@ -125,23 +134,22 @@ nav >div:hover{
 }
 .menu{
     text-align: end;
-    border: 1px solid darkcyan;
 }
 .dropbutton{
     display: none;
     background-color:darkcyan;
     border: none;
+    color: white;
 }
 .dropbutton >img{
     height: 40pxx;
     width: 40pxx;
-
 }
 .firstpage{
-    background-image: urll('./pictures/mobile1.jpg');
+    background-image: urlm('./pictures/mobile1.jpg');
     max-width: 1000px;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 10psx;
     background-size: contain;
     background-position: right;
     background-repeat: repeat;
@@ -150,20 +158,29 @@ nav >div:hover{
 .content{
     display: block;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 40px;
     min-height: 700px;
     max-width: 100%;
     padding-top: 15px;
     background-image: linear-gradientl(90deg, rgba(255, 255, 255, 0.997)20%, rgba(255, 255, 255, 0.256),rgb(255, 255, 255));
 }
+.log{
+    margin-top: 55px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+}
+
+
 .logo1{
     margin-top: 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 1px;
     margin-bottom: 0px;
     max-width: 700px;
     font-size: 2rem;
-    text-shadow: 4px 4px 10px black;
-    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 4px black;
+    color: rgba(255, 255, 255, 0.99);
     font-weight: 600;
 }
 .intro{
@@ -249,7 +266,7 @@ footer{
     display: flex;
     flex-direction: column;
     height: auto;
-    background-color: rgb(43, 30, 52);
+    background-color: rgb(62, 44, 75);
     margin: auto;
     color: white;
     bottom: 0;
@@ -352,11 +369,6 @@ footer a{
         margin-top: 40px;
     }
 }
-.log{
-    margin-top: 55px;
-    margin-bottom: 80px;
-}
-
 .cube{
     float: left;
     transform: translateY(2px);
@@ -395,7 +407,7 @@ footer a{
     border-radius: 50%;
     z-index: 1;
     scale: 1;
-    background-color: dimgray;
+    background-color: rgb(251, 251, 251);
 
 }
 .cube2{
