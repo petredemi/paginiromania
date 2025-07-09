@@ -190,7 +190,7 @@ nav >div:hover{
 }
 .ag{
     margin: auto;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: white;
     text-shadow: 2px 2px 4px black;
     text-align: center;
@@ -225,9 +225,9 @@ nav >div:hover{
 .item{
     border: 1pnx solid black;
     box-shadow: 2px 2px 8px black;
-    min-width: 300px;
+    min-width: 260px;
     text-align: center;
-    height: 300px;
+    height: auto;
     font-family: font-3;
     padding: 10px;
 
@@ -247,10 +247,13 @@ nav >div:hover{
     margin-left: 1px;
     margin-bottom: 0px;
     max-width: 700px;
-    font-size: 2rem;
-    text-shadow: 4px 4px 4px black;
+    font-size: 1.8rem;
+    text-shadow: 4px 2px 4px black;
     color: rgba(255, 255, 255, 0.99);
     font-weight: 600;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    line-height: 1;
 }
 .intro{
     position: relative;
