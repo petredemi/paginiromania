@@ -26,6 +26,8 @@
 
 body{
     font-size: 18px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .servicespage{
@@ -39,7 +41,7 @@ body{
     margin: 1px;
 }
 h2{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -75,14 +77,15 @@ h2{
 }
 .port >h3{
     color: rgb(33, 17, 52);
-    font-size: 1.2rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 5px;
+    word-spacing: -2px;
 }
 .port >p{
     margin-left: 20px;
-    font-size: 1rem;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.8rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 @media(max-width:450px){
     .portfolio >div> img{
