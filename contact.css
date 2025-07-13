@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'font-1';
+    src: url('./fonts/font-1.ttf');
+        font-weight: 600;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'font-2';
+    src: url('./fonts/font-2.ttf');
+        font-weight: 600;
+        font-style: normal;
+}
 .contactpage{
     display: flex;
     margin-top: 100px;
@@ -13,6 +25,10 @@
     padding: 5px;
     margin-bottom: 20px;
     padding-top: 20px;
+}
+.optionalcontact >h1{
+    font-family: font-2;
+    line-height: 1.2;
 }
 .optionalcontact p {
     margin: 2px;

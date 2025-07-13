@@ -22,6 +22,11 @@
 .personalpage  p, h4{
     margin: 3px;
     margin-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.personalpage h1{
+    color: rgb(31, 5, 50);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .personalpage > .email_phone{
     margin: 1px;
@@ -43,8 +48,8 @@
 .personalpage > .aboutme >p {
     margin: 0px;
     line-height: 1.5;
-    font-size: 1rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.85rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 footer{
     position: fixed;
