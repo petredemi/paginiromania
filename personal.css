@@ -41,7 +41,7 @@
     border-radius: 50%;
     padding: 3px;
     border: 2px solid blue;
-    background: linear-gradient(40deg, red, yellow, blue);
+    background-color: deepskyblue;
     float: right;
     margin-right: 20px;
 }
