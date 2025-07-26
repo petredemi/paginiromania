@@ -27,7 +27,7 @@ body{
     padding: 0px;
     margin: 0px;
     font-size: 18px;
-    background-color: rgb(229, 255, 253);
+    background-color: rgb(248, 254, 253);
 }
 .back{
     background-size:contain;
@@ -44,6 +44,10 @@ body{
     height: 290px;
     background-color: cornflowerblue;
     left: 0;
+    background-position:center;
+    background-repeat: repeatt;
+    background-size:cover;
+    background-image: url('./projectsimg/backgroundstones.jpg');
 }
 .seo{
     text-align: center;
@@ -216,13 +220,26 @@ nav >div:hover{
     
 }
 .frontimg{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .frontimg > img{
         max-width: 380px;
         height: auto;
         object-fit: cover;
         box-shadow: 2px 2px 6px black;
+}
+.fronttext{
+    max-width: 360px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fronttext >h4{
+    margin-bottom: 1px;
+}
+.fronttext li{
+    font-size: 1rem;
 }
 .items{
     display: grid;

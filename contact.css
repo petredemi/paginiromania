@@ -12,10 +12,10 @@
 }
 .contactpage{
     display: flex;
-    margin-top: 100px;
-    width: 100%;
-    max-width: 1000px;
+    justify-content: center;
     margin: auto;
+    margin-top: 1px;
+    max-width: 1000px;
     flex-wrap: wrap;
     
 }
@@ -37,33 +37,33 @@
 }
 fieldset{
     padding: 5px;
-    margin: auto;
     font-size: 1rem;
 }
 
 form ul{
     list-style:none;
     min-width: 200px;
-    padding: 5px;
+    padding: 0px;
     margin-bottom: 5px;
 }
 form{
-    width: auto;
+    margin: auto;
     margin-top: 110px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 form li{
     margin: 6px;
     display: flex;
-    max-width: 360px;
+    max-width: 340px;
     justify-content: space-between;
 }
 label{
     font-size: 1rem;
 }
 input{
-    min-width: 270px;
+    min-width: 260px;
     border: 1px solid black;
     padding: 2px;
     font-size: 1rem;
