@@ -19,6 +19,9 @@
     flex-wrap: wrap;
     
 }
+strong{
+    letter-spacing: 2px;
+}
 .optionalcontact{
     margin-left: 20px;
     max-width: 380px;
