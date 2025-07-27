@@ -98,7 +98,7 @@ h2{
 }
 .portfolio >div> img{
     min-width: 230px;
-    max-width: 360px;
+    max-width: 380px;
     margin: 1px;
 }
 .portfolio >div>img:hover{
