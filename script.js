@@ -31,12 +31,14 @@ const a7 = './pictures/renewablepannels.jpg'
 const a8 = './pictures/restaurantplateswithfood.jpg'
 const a9 = './pictures/painterroll.jpg'
 const a10 = './pictures/hairstylewoman.jpg'
+const a11 = './pictures/drone.jpg';
+const a12 = './pictures/cameras.jpg'
 
 const laptop = [a, b, c, d]
-const picturemix = [a0, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10]
+const picturemix = [a0, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12]
 let run = 0;
 function changeimg(){
-    if( run == 11){ run = 0}
+    if( run == 13){ run = 0}
     myimage.src = picturemix[run]
     run += 1
 }
