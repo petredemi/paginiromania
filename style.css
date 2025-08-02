@@ -140,10 +140,8 @@ nav a{
 }
 nav >div:hover{
     background-color: rgba(2, 116, 65, 0.915);
-    zoom: 1.5;
+    font-size: 2rem;
     transition: all 500ms;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 .active >a{
     color: red;
@@ -232,7 +230,7 @@ nav >div:hover{
     width: fit-content;
     text-wrap: nowrap;
     animation-name: runing;
-    animation-duration: 15s;
+    animation-duration: 25s;
     animation-iteration-count:infinite;
     animation-timing-function: linear;
     animation-direction: reverse;
