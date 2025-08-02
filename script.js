@@ -51,10 +51,10 @@ dropbtn.addEventListener('click', (e) => {
     divwidth = toppage.offsetWidth
     if(divwidth < 550){
         if(menu == 0){
-            navbar.setAttribute('style', 'display:flex')
+            navbar.setAttribute('style', 'display:flex; width:160px; transition: width 1s;')
             menu = 1
         }else{
-            navbar.setAttribute('style', 'display:none')
+            navbar.setAttribute('style', 'width: 0px; transition: width 1s;')
             menu = 0
         }
     }
@@ -68,6 +68,6 @@ navbar.addEventListener('click', (e) => {
 dropmenu.addEventListener('mouseleave', (e) => {
     divwidth = toppage.offsetWidth
     if(divwidth < 550){
-    navbar.setAttribute('style', 'display:none')
+    navbar.setAttribute('style', 'display:nonee')
     }
 })

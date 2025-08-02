@@ -213,12 +213,38 @@ nav >div:hover{
 }
 .log{
     margin-top: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     
 }
+.scroll{
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    background-color: gainsboro;
+}
+.scrolltext{
+    font-size: 1.1rem;
+    margin: 2px;
+    width: fit-content;
+    text-wrap: nowrap;
+    animation-name: runing;
+    animation-duration: 15s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+@keyframes runing{
+    from{translate: -100%}
+    to{
+       translate:100vw;
+    }
+}
+
 .frontimg{
     display: flex;
     align-items: center;
@@ -452,24 +478,23 @@ footer a{
     .dropbutton{
         display: block;
     }
+
     nav{
-        width: 160px;
+        width: 0px;
         height: 230px;
-        display: none;
+        display: flex;
         position:fixed;
         justify-content: center;
         flex-direction: column;
-        right: 0%;
-        margin-right: 0px;
+        right: -10px;
+        margin-right: 10px;
         margin-top: 12px;
         background-color:rgba(26, 9, 40, 0.75);
         z-index: 2;
-        padding: 8px;
-
     }
     nav >div{
         margin: 6px;
-        padding: 3px;
+        padding: 2px;
     }
     .firstpage_webpages img{
         max-width: 360px;
