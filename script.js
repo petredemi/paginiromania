@@ -22,7 +22,7 @@ dropbtn.addEventListener('click', (e) => {
     divwidth = toppage.offsetWidth
     if(divwidth < 550){
         if(menu == 0){
-            navbar.setAttribute('style', 'display:flex; width:160px; transition: width 1s;')
+            navbar.setAttribute('style', 'width:160px; transition: width 1s;')
             menu = 1
         }else{
             navbar.setAttribute('style', 'width: 0px; transition: width 1s;')
