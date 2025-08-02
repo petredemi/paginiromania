@@ -139,8 +139,9 @@ nav a{
     
 }
 nav >div:hover{
-    background-color: rgba(45, 6, 49, 0.327);
-    zoom: 1.2;
+    background-color: rgba(2, 116, 65, 0.915);
+    zoom: 1.5;
+    transition: all 500ms;
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -249,8 +250,8 @@ nav >div:hover{
     display: flex;
     align-items: center;
 }
-.frontimg > img{
-        max-width: 430px;
+#myimage{
+        max-width: 450px;
         height: auto;
         object-fit: cover;
         box-shadow: 1px 1px 4px black;
@@ -478,17 +479,15 @@ footer a{
     .dropbutton{
         display: block;
     }
-
     nav{
         width: 0px;
         height: 230px;
-        display: flex;
         position:fixed;
         justify-content: center;
         flex-direction: column;
         right: -10px;
+        top: 60px;
         margin-right: 10px;
-        margin-top: 12px;
         background-color:rgba(26, 9, 40, 0.75);
         z-index: 2;
     }
@@ -520,8 +519,6 @@ footer a{
     margin-bottom: 0px;
     margin-right: 50px;
     width: fit-content;
-
-
 }
 .cube1{
     display: flex;
