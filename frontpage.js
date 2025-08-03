@@ -26,7 +26,7 @@ let run = 0;
 function changeimg(){
     if( run == 13){ run = 0}
     myimage.src = picturemix[run]
-    myimage.setAttribute('style', 'max-width: 450px; transition: width 1s')
+ //   myimage.setAttribute('style', 'max-width: 450px; transition: width 1s')
     run += 1
 }
 setInterval(changeimg, 4000)

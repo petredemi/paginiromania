@@ -114,13 +114,14 @@ h3{
 }
 nav{
     display: flex;
-    flex-wrap: wrap;
     justify-content: end;
     align-items: center;
     margin-left: 50px;
     margin-right: 10px;
     height: fit-content;
+    z-index: 5;
 }
+
 nav >div{
     margin-left: 10px;
     margin-bottom: 1px;
@@ -169,10 +170,6 @@ nav >div:hover{
     background-color:rgba(0, 139, 139, 0);
     border: none;
     color: white;
-}
-.dropbutton >img{
-    height: 40pxx;
-    width: 40pxx;
 }
 .firstpage{
     background-image: urlm('./pictures/mobile1.jpg');
@@ -235,7 +232,6 @@ nav >div:hover{
     animation-timing-function: linear;
     animation-direction: reverse;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
 @keyframes runing{
     from{translate: -100%}
@@ -276,7 +272,7 @@ nav >div:hover{
     box-shadow: 2px 2px 8px black;
     background-color: white;
     text-align: center;
-    max-width: 420px;
+    max-width: 420ppx;
     height: auto;
     font-family: font-3;
     padding: 10px;
@@ -284,12 +280,24 @@ nav >div:hover{
 }
 .item >h4{
     font-size: 1.8rem;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 .item >p{
     line-height: 1.4;
 }
-
+#item1{
+    text-align: justify;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#item1 >p{
+    margin: 5px;
+    line-height: 1.2;
+    font-size: 1rem;
+}
 .logo1{
     margin-top: 0px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -445,9 +453,7 @@ footer a{
         background-position: center;
         background-repeat: no-repeat;
         background-image: url('./pictures/mobile1.jpg');
-
     }
-
 }
 @media(max-width: 550px){
     .firstpage{
@@ -474,6 +480,11 @@ footer a{
     .items{
         grid-template-columns: 1fr;
     }
+    #item1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+    }
     .dropbutton{
         display: block;
     }
@@ -481,13 +492,13 @@ footer a{
         width: 0px;
         height: 230px;
         position:fixed;
+        flex-wrap: wrap;
         justify-content: center;
         flex-direction: column;
         right: 0;
-        top: 60px;
+        top: 50px;
         margin-right: 0px;
         background-color:rgba(26, 9, 40, 0.75);
-        z-index: 2;
     }
     nav >div{
         margin: 6px;

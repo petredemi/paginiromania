@@ -1,5 +1,4 @@
 
-
 const dropbtn = document.querySelector('.dropbutton')
 const navbar = document.querySelector('nav')
 const dropmenu = document.querySelector('.menu')
@@ -37,7 +36,7 @@ navbar.addEventListener('click', (e) => {
     }
 })
 dropmenu.addEventListener('mouseleave', (e) => {
-    divwidth = toppage.offsetWidth
+    divwidth = toppage.offsetWidth;
     if(divwidth < 550){
     navbar.setAttribute('style', 'width: 0px; transition: width 1s;')
     }
