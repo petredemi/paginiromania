@@ -29,7 +29,12 @@ body{
     padding: 0px;
     margin: 0px;
 }
-
+.acasa{
+    background-color: none;
+}
+.exemple{
+    background-color: cadetblue;
+}
 .servicespage{
     max-width: 1000px;
     margin: auto;

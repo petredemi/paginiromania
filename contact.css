@@ -10,6 +10,9 @@
         font-weight: 600;
         font-style: normal;
 }
+.contact{
+    background-color: cadetblue;
+}
 .contactpage{
     display: flex;
     justify-content: center;

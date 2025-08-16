@@ -9,7 +9,7 @@
     src: url('./fonts/font-2.ttf');
         font-weight: 600;
         font-style: normal;
-}
+}     
 @font-face {
     font-family: 'font-3';
     src: url('./fonts/font-3.ttf');
@@ -42,7 +42,7 @@ body{
 }
 .background1{
     height: 290px;
-    background-color: cornflowerblue;
+    background-color: rgba(100, 148, 237, 0.194);
     left: 0;
     background-position:center;
     background-repeat: repeatt;
@@ -96,8 +96,8 @@ h3{
 }
 
 .toppage{
-    background-color:rgb(0, 139, 139);
-    background-color: rgb(41, 7, 68);
+    background-color:rrgb(0, 139, 139);
+    background-color: rgba(31, 13, 45, 0.902);
     position: fixed;
     width: 100vw;
     z-index: 2;
@@ -133,19 +133,18 @@ nav >div{
     cursor: pointer;
     border-radius: 5px;
 }
-nav a{
+nav >div>a{
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 4px;
-    
 }
 nav >div:hover{
-    background-color: rgba(2, 116, 65, 0.915);
-    font-size: 2rem;
+    background-color: rgba(17, 208, 122, 0.915);
+    font-size: 1.8rem;
     transition: all 500ms;
 }
-.active >a{
-    color: red;
+nav >div:active{
+    background-color: blueviolet;
 }
 .logo-title{
     display: flex;
@@ -244,7 +243,8 @@ nav >div:hover{
     font-size: 1rem;
 }
 .sp{
-    margin-right: 8px;
+    margin-right: 2px;
+    word-spacing: 5px;
 }
 @keyframes runing{
     from{translate: -100%}

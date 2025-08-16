@@ -13,13 +13,19 @@
     <meta name="robots" content="index, exemple, personal, contact">
     <link rel="canonical" href="https://www.diawebdesign.com">
     <link rel="stylesheet" href="style.css">
+    <style>
+        div.acasa{
+            background-color: cadetblue;
+        }
+    </style>
     <link rel="apple_touch-icon" type="image/icon" sizes="180x180" href="di@5.png" style="border-radius: 10px;"> 
     <link rel="icon" type="image/png" href="di@1.png">
     <link rel="icon" type="image/png" href="di@6.png"> 
     <link rel="icon" type="image/png" href="di@148.png">
-    <link rel="icon" type="image/png" href="di@4.png"> 
-    <script src="script.js" defer></script>
-    <script src="frontpage.js" defer></script>
+    <link rel="icon" type="image/png" href="di@4.png">
+    <script src="./header.js" defer></script>
+    <script src="./script.js" defer></script>
+    <script src="./frontpage.js" defer></script>
 
 </head>
 <body>
@@ -35,26 +41,7 @@
                 <div class="h1">DIA.</div>
                 <div class="h2">webdesign</div>
             </div>
-            <div class="menu">
-                <button class="dropbutton">
-              <!--  <img src="./icons/icons8-menu-50.svg" alt=""> -->
-                    <span style='font-size:35px; margin-bottom: 7px;'>&#9776;</span>
-                </button>
-                <nav>
-                    <div class="acasa active " >
-                        <a href="index.html">Acasa</a>
-                    </div>
-                    <div id="ex" class="exemple">
-                        <a href="./exemple.html">Produse</a>
-                    </div>
-                    <div class="personal">
-                        <a href="./personal.html">Personal</a>
-                    </div>
-                    <div class="contact">
-                        <a href="./contact.html">Contact</a>
-                    </div>
-                </nav>
-            </div>
+            <special-header></special-header>
         </div>
     </div>
     <div class="firstpage">
@@ -72,60 +59,42 @@
                         <div class="scrolltext scrollstock">
                             <div class="stock">
                                 <div class="simbol1 sp">Apple: </div>
-                                <div class="price1 sp"> 43534g</div>
-                                <div class="procent1"></div>
                                 <img id="img1" src="" height="16px" alt="">    
                             </div>
                             <div class="stock">
                                 <div class="simbol2 sp"></div>
-                                <div class="price2 sp"></div> 
-                                <div class="procent2"></div>
                                 <img id="img2" src="" height="16px" alt="">    
   
                            </div>
                             <div class="stock">
                                 <div class="simbol3 sp">Google:</div>
-                                <div class="price3 sp">43534g</div>
-                                <div class="procent3"></div>
                                 <img id="img3" src="" height="16px" alt="">    
    
                            </div> 
                             <div class="stock">
                                 <div class="simbol4 sp">FaceBook:</div>
-                                <div class="price4 sp">43534g</div>
-                                <div class="procent4"></div>
                                 <img id="img4" src="" height="16px" alt="">    
                            </div> 
                             <div class="stock">
                                 <div class="simbol5 sp">Bitcoin:</div>
-                                <div class="price5 sp">43534g</div>
-                                <div class="procent5"></div>
                                 <img id="img5" src="" height="16px" alt="">    
    
                            </div>
                             <div class="stock">
                                 <div class="simbol6 sp"></div>
-                                <div class="price6 sp"></div>
-                                <div class="procent6"></div>
                                 <img id="img6" src="" height="16px" alt="">    
                            </div>
                             <div class="stock">
                                 <div class="simbol7 sp"></div>
-                                <div class="price7 sp"></div>
-                                <div class="procent7"></div>
                                 <img id="img7" src="" height="16px" alt="">    
    
                            </div>
                             <div class="stock">
                                 <div class="simbol8 sp">Apple:</div>
-                                <div class="price8 sp"></div> 
-                                <div class="procent8"></div>
                                 <img id="img8" src="" height="16px" alt="">                
                            </div> 
                             <div class="stock">
                                 <div class="simbol9 sp">Apple:</div>
-                                <div class="price9 sp"></div> 
-                                <div class="procent9"></div>
                                 <img id="img9" src="" height="16px" alt="">                
                            </div> 
                             
@@ -209,79 +178,8 @@
                     </div>
                 </div>
             </div>
-  <!--             <div class="intro">
-                    <p><span style="font-size: 10px;margin-right: 10px;">&#x1F7E1;</span> Încearcă o pagină de web pentru tine, gratuit, timp de o lună.</p>
-                    <p><span style="font-size: 10px;margin-right: 10px;">&#x1F7E1;</span> Site-uri fara template, site-uri unice pentru afaceri</p>
-                    <p><span style="font-size: 10px;margin-right: 10px;">&#x1F7E1;</span> Fii ca un profesionist, pune-ti afacerea pe website  </p>
-                    <p><span style="font-size: 10px;margin-right: 10px;">&#x1F7E1;</span> Suntem bucurosi sa construim pagini web pentru firme noi</p>
-                    <p><span style="font-size: 10px;margin-right: 10px;">&#x1F7E1;</span> Un site personal va oferi mai multa incredere clientilor</p>
-                    <p><span style="font-size: 10px;margin-right: 10px;">&#x1F7E1;</span> Puneti ideile si creatiile pe internet, fā-le cunoscute mai usor</p>
-                </div>                
-                <div class="intro1">                    
-                    <p><span style="font-size: 10px;margin-right: 10px;">&#x1F7E3;</span> Oferim consultanta pentru a expune afacerea pe internet.</p>
-                    <p><span style="font-size: 10px;margin-right: 10px;">&#x1F7E3;</span> Construim site-uri web pentru PFA, lanseaza afacerea ta pe net </p>
-                    <p><span style="font-size: 10px;margin-right: 10px;">&#x1F7E3;</span> Construim site-ul sau pagina web impreuna cu tine, pas cu pas.</p>
-                    <p><span style="font-size: 10px;margin-right: 10px;">&#x1F7E3;</span> Dezvoltare permanenta a site-lui web potrivit afacerii tale.</p>
-                    <p><span style="font-size: 10px;margin-right: 10px;">&#x1F7E3;</span> Actualizam site-ul orcand cu noile produse si servicii ale afacerii tale.</p>
-                    <p><span style="font-size: 10px;margin-right: 10px;">&#x1F7E3;</span> Analize de web, cum sunt numarul de vizitatori, locatii etc.</p>        
-                </div>  
-                          
-                <h4 style="margin-top: 50px; margin-bottom: 4px; font-size: 2rem;">Proiecte de websites si pagini web</h4>
-                <div class="firstpage_webpages">
-                    <div>
-                        <img src="./pictures/blog.jpeg" alt="">
-                        <h4>Website-uri personale</h4>
-                    </div>
-                    <div>
-                        <img src="./pictures/catering.jpeg" alt="">
-                        <h4>Site-uri pentru servicii diverse </h4>
-                    </div>
-                    <div>
-                        <img src="./pictures/food.jpeg" alt="">
-                        <h4>Site-uri web pentru restaurante si braserii</h4>
-                    </div>
-                    <div>
-                        <img src="./pictures/hotel.jpeg" alt="">
-                        <h4>Site-uri si pagini web pentru hoteluri, pensiuni si cabane </h4>
-                    </div>
-                    <div>
-                        <img src="./pictures/cafe.jpeg" alt="">
-                        <h4>Site-uri pentu Cafenea sau Cofetarie</h4>
-                    </div>
-                    <div>
-                        <img src="./pictures/nature.jpeg" alt="">
-                        <h4>Fotografie si arta pe un website</h4>
-                    </div>
-                </div>
-                <h4 style="margin-top: 30px; margin-bottom: 4px; font-size: 2rem;">Proiecte de aplicatii web</h4>
-                <div class="firstpage_pictures">
-                    <img src="./projectsimg/restaurant.jpg" alt="">
-                    <img src="./projectsimg/dashboard.png" alt="">
-                    <img src="./projectsimg/todo.png" alt="">
-                    <img src="./projectsimg/battleship.png" alt="">
-                    <img src="./projectsimg/calculator.jpg" alt="">
-                    <img src="./projectsimg/etchasketch.png" alt="">
-                    <img src="./projectsimg/library.png" alt="">
-                    <img src="./projectsimg/tic-tac-toe.jpg" alt="">
-                </div>
-            </div>
-        -->
     </div>
-
-    <footer>
-        <p>&copy; 2025 DIA.Webdesign</p>
-        <div class="email_phone">
-            <img src="./symbols/icons8-email-48.png" alt="" style="margin-right: 15px;">
-            <a href="mailto:info@diawebdesign.com">info@diawebdesign.com</a>
-        </div>
-
-        <div class="links">
-            <p style="margin-right: 10px; height: fit-content;">Social Profile</p> 
-            <a href="https://www.linkedin.com/in/petru-demian-b8306262/" target = '_blank'>  
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" height="25px" />
-            </a>
+    <special-footer></special-footer>
     
-        </div>
-    </footer>    
 </body>
 </html>
