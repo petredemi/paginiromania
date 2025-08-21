@@ -120,6 +120,8 @@ function localTime(){
 
 const symbols = [simbol1, simbol2, simbol3, simbol4, simbol5, simbol6, simbol7, simbol8, simbol9 ]
 const imgs = [img1, img2, img3, img4, img5, img6, img7, img8, img9]
+const shares = ['AMZN', 'AAPL', 'GOOG', 'META', 'TSLA', 'NVDA', 'MSFT', 'AVGO', 'AMD', 'IBM']
+
 
 async function finnhubPrice(x, n){
     try{
@@ -150,12 +152,11 @@ async function finnhubPrice(x, n){
         console.log(error)
     };
 }
-finnhubPrice('AMZN', 0)
-finnhubPrice('AAPL', 1)
-finnhubPrice('GOOG', 2)
-finnhubPrice('META', 3)
-finnhubPrice('TSLA', 4)
-finnhubPrice('NVDA', 5)
-finnhubPrice('MSFT', 6)
-finnhubPrice('AVGO', 7)
-finnhubPrice('AMD', 8)
+
+function updatePrices(){
+        for (let i = 0; i < shares.length; i++){
+            finnhubPrice(shares[i], i)  
+        }
+}
+updatePrices()
+setInterval(updatePrices, 100000)
