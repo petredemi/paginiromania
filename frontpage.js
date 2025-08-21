@@ -99,12 +99,13 @@ let img9 = document.querySelector('#img9')
 let igr = './icons/trianglered.png'
 let igg = './icons/trianglegreen.png';
 let marketstatus = document.querySelector('div.marketstatus');
-let timedisplay = document.querySelector('div.time')
+let timedisplay = document.querySelector('div.time');
 
+let nyhour = 1;
 function localTime(){
         const dd = new Date()
         const hour = dd.getHours()
-        let nyhour 
+       // let nyhour 
         if( hour == 0){nyhour = 19}
         else if( hour == 1){ nyhour = 20}
         else if ( hour ==2){ nyhour = 21}
@@ -112,22 +113,17 @@ function localTime(){
         else if (hour == 4){ nyhour = 23}
         else{ nyhour =  hour - 5}
         const min = '0' + dd.getMinutes()
-        timedisplay.textContent = 'NewYork time: ' + nyhour+ ' : ' + min.slice(-2)
+        timedisplay.textContent = 'NewYork time: ' + nyhour+ ' : ' + min.slice(-2);
 }
- setInterval(localTime, 1000)
+setInterval(localTime, 1000);
 
-
-
-const symbols = [simbol1, simbol2, simbol3, simbol4, simbol5, simbol6, simbol7, simbol8, simbol9 ]
-const imgs = [img1, img2, img3, img4, img5, img6, img7, img8, img9]
-const shares = ['AMZN', 'AAPL', 'GOOG', 'META', 'TSLA', 'NVDA', 'MSFT', 'AVGO', 'AMD', 'IBM']
-
-
+const symbols = [simbol1, simbol2, simbol3, simbol4, simbol5, simbol6, simbol7, simbol8, simbol9 ];
+const imgs = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
+const shares = ['AMZN', 'AAPL', 'GOOG', 'META', 'TSLA', 'NVDA', 'MSFT', 'AVGO', 'AMD', 'IBM'];
 async function finnhubPrice(x, n){
     try{
         const response = await fetch(`https://finnhub.io/api/v1/quote?symbol=${x}&exchange=US&token=d2c3hr9r01qvh3vdtos0d2c3hr9r01qvh3vdtosg`, {mode:'cors'});
         const openstatus = await fetch(`https://finnhub.io/api/v1/stock/market-status?exchange=US&token=d2c3hr9r01qvh3vdtos0d2c3hr9r01qvh3vdtosg`, {mode:'cors'});
-
         const stock = await response.json();
         const open = await openstatus.json()             
         if(!response.ok || !openstatus){
@@ -151,12 +147,14 @@ async function finnhubPrice(x, n){
     }catch(error){
         console.log(error)
     };
-}
-
+};
 function updatePrices(){
+    if( nyhour > 8 || nyhour < 16){
         for (let i = 0; i < shares.length; i++){
             finnhubPrice(shares[i], i)  
-        }
-}
+        };
+    }
+};
 updatePrices()
 setInterval(updatePrices, 100000)
+
