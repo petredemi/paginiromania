@@ -4,7 +4,6 @@ const navbar = document.querySelector('nav')
 const dropmenu = document.querySelector('.menu')
 const toppage = document.querySelector('.toppage')
 
-
 let divwidth = toppage.offsetWidth //width of div 
 
 let menu = 0

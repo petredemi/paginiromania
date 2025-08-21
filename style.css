@@ -214,6 +214,16 @@ nav >div:active{
     justify-content: center;
     
 }
+.statusandtime{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.crypto{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-spacing: 3px;
+}
 .scroll{
     overflow: hidden;
     margin-top: 0px;

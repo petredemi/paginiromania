@@ -1,5 +1,35 @@
 
+let simbol11 = document.querySelector('div.simbol11')
+let simbol12 = document.querySelector('div.simbol12')
 
+const socket = new WebSocket('wss://ws.finnhub.io?token=d2c3hr9r01qvh3vdtos0d2c3hr9r01qvh3vdtosg');
+
+// Connection opened -> Subscribe
+socket.addEventListener('open', function (event) {
+   // socket.send(JSON.stringify({'type':'subscribe', 'symbol': 'AAPL'}))
+    socket.send(JSON.stringify({'type':'subscribe', 'symbol': 'BINANCE:BTCUSDT'}))
+    socket.send(JSON.stringify({'type':'subscribe', 'symbol': 'BINANCE:ETHUSDT'}))
+})
+
+// Listen for messages
+socket.addEventListener('message', function (event) {
+   // console.log('Message from server ', event.data);
+  let ee = JSON.parse(event.data)
+  let coin = ee.data[0].s
+  let pp = ee.data[0].p.toFixed(2)
+  let price = pp.toString()
+  if (coin == 'BINANCE:BTCUSDT'){
+        simbol11.textContent = 'BITCOIN:' + ' ' + '$'+ price.substr(0, 3) + ',' + price.substr(3)
+    } else if (coin == 'BINANCE:ETHUSDT'){
+        simbol12.textContent = 'ETHER:' + ' ' + '$'+ price//.substr(0, 3) + ',' + price.substr(3)
+    }
+
+})
+
+// Unsubscribe
+ var unsubscribe = function(symbol) {
+    socket.send(JSON.stringify({'type':'unsubscribe','symbol': symbol}))
+}
 let myimage = document.querySelector('#myimage')
 const a = './pictures/designerdesk.jpg';
 const b = './pictures/laptopondesk.jpg';
@@ -26,7 +56,6 @@ let run = 0;
 function changeimg(){
     if( run == 13){ run = 0}
     myimage.src = picturemix[run]
- //   myimage.setAttribute('style', 'max-width: 450px; transition: width 1s')
     run += 1
 }
 setInterval(changeimg, 4000)
@@ -59,7 +88,25 @@ let simbol9 = document.querySelector('div.simbol9')
 let img9 = document.querySelector('#img9')
 
 let igr = './icons/trianglered.png'
-let igg = './icons/trianglegreen.png'
+let igg = './icons/trianglegreen.png';
+let marketstatus = document.querySelector('div.marketstatus');
+let timedisplay = document.querySelector('div.time')
+
+function localTime(){
+        const dd = new Date()
+        const hour = dd.getHours()
+        let nyhour 
+        if( hour == 0){nyhour = 19}
+        else if( hour == 1){ nyhour = 20}
+        else if ( hour ==2){ nyhour = 21}
+        else if( hour == 3){ nyhour = 22}
+        else if (hour == 4){ nyhour = 23}
+        else{ nyhour =  hour - 5}
+        const min = '0' + dd.getMinutes()
+        timedisplay.textContent = 'NewYork time: ' + nyhour+ ' : ' + min.slice(-2)
+}
+ setInterval(localTime, 1000)
+
 
 
 const symbols = [simbol1, simbol2, simbol3, simbol4, simbol5, simbol6, simbol7, simbol8, simbol9 ]
@@ -67,14 +114,23 @@ const imgs = [img1, img2, img3, img4, img5, img6, img7, img8, img9]
 
 async function finnhubPrice(x, n){
     try{
-       const response = await fetch(`https://finnhub.io/api/v1/quote?symbol=${x}&exchange=US&token=d2c3hr9r01qvh3vdtos0d2c3hr9r01qvh3vdtosg`, {mode:'cors'});
-       const stock = await response.json();
-             
-        if(!response.ok){
+        const response = await fetch(`https://finnhub.io/api/v1/quote?symbol=${x}&exchange=US&token=d2c3hr9r01qvh3vdtos0d2c3hr9r01qvh3vdtosg`, {mode:'cors'});
+        const openstatus = await fetch(`https://finnhub.io/api/v1/stock/market-status?exchange=US&token=d2c3hr9r01qvh3vdtos0d2c3hr9r01qvh3vdtosg`, {mode:'cors'});
+
+        const stock = await response.json();
+        const open = await openstatus.json()             
+        if(!response.ok || !openstatus){
             throw 'no data'
         }else{
+            let openclosed; 
+            if(open.isOpen == false){
+                 openclosed = 'Closed'
+            }else if(open.isOpen == true){
+                openclosed = 'Open'
+            }
             console.log(stock)
             symbols[n].textContent = x + ': ' + stock.c + ' ' + ' ' + stock.dp.toFixed(2) + '%'
+            marketstatus.textContent = 'US Markets: ' + openclosed
             if(stock.dp > 0){
             imgs[n].src = igg
             }else if (stock.dp < 0){
