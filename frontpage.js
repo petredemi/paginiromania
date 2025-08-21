@@ -12,6 +12,8 @@ socket.addEventListener('open', function (event) {
 })
 
 // Listen for messages
+let btctrend = 100000;
+let ethtrend = 4000;
 socket.addEventListener('message', function (event) {
    // console.log('Message from server ', event.data);
   let ee = JSON.parse(event.data)
@@ -19,11 +21,18 @@ socket.addEventListener('message', function (event) {
   let pp = ee.data[0].p.toFixed(2)
   let price = pp.toString()
   if (coin == 'BINANCE:BTCUSDT'){
-        simbol11.textContent = 'BITCOIN:' + ' ' + '$'+ price.substr(0, 3) + ',' + price.substr(3)
+        simbol11.textContent = ' $'+ price.substr(0, 3) + ',' + price.substr(3)
+        if (pp - btctrend > 0){ simbol11.style.backgroundColor = 'rgb(8, 200, 8)'}
+        else if( pp - btctrend < 0) { simbol11.style.backgroundColor = 'rgba(251, 56, 56, 0.76)'}
+        else{ simbol11.style.backgroundColor = 'white'}
+        btctrend = pp
     } else if (coin == 'BINANCE:ETHUSDT'){
-        simbol12.textContent = 'ETHER:' + ' ' + '$'+ price//.substr(0, 3) + ',' + price.substr(3)
+        simbol12.textContent = ' $'+ price//.substr(0, 3) + ',' + price.substr(3)
+        if (pp - ethtrend > 0){ simbol12.style.backgroundColor = 'rgb(8, 200, 8)'}
+        else if( pp - ethtrend < 0) { simbol12.style.backgroundColor = 'rgba(251, 56, 56, 0.76)'}
+        else { simbol12.style.backgroundColor = 'white'}
+            ethtrend = pp;
     }
-
 })
 
 // Unsubscribe
@@ -128,7 +137,7 @@ async function finnhubPrice(x, n){
             }else if(open.isOpen == true){
                 openclosed = 'Open'
             }
-            console.log(stock)
+//            console.log(stock)
             symbols[n].textContent = x + ': ' + stock.c + ' ' + ' ' + stock.dp.toFixed(2) + '%'
             marketstatus.textContent = 'US Markets: ' + openclosed
             if(stock.dp > 0){
