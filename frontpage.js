@@ -148,13 +148,22 @@ async function finnhubPrice(x, n){
         console.log(error)
     };
 };
-function updatePrices(){
-    if( nyhour > 8 || nyhour < 16){
+function checkPrices(){
         for (let i = 0; i < shares.length; i++){
             finnhubPrice(shares[i], i)  
         };
+};
+function updatePrices(){
+    let weekday = new Date()
+    let x = weekday.getDay()
+    if( x > 0 && x < 6){
+        if( nyhour > 8 || nyhour < 16){
+            for (let i = 0; i < shares.length; i++){
+                finnhubPrice(shares[i], i)  
+            };
+        }
     }
 };
-updatePrices()
+checkPrices()
 setInterval(updatePrices, 100000)
 
