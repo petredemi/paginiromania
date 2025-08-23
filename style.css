@@ -49,22 +49,12 @@ body{
     background-size:cover;
     background-image: url('./projectsimg/backgroundstones.jpg');
 }
-.seo{
-    text-align: center;
-    text-shadow: none;
-    line-height: 0.8remm;
-    font-size: 0.8rems;
-    font-weight: 100;
-    margin-bottom: 1px;
-    opacity: 0%;
-    position: absolute;
-}
 h1{
     font-size: 2.1rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 1px;
     margin-bottom: 1px;
-    color: rgb(244, 106, 207);
+    color: rgb(1, 141, 50);
     height: fit-content;
 }
 h2{
@@ -83,7 +73,7 @@ h3{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 1px;
     margin-bottom: 1px;
-    color: rgb(241, 71, 195);
+    color: rgb(4, 183, 25);
     font-weight: 600;
     height: fit-content;
 }
