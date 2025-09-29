@@ -279,22 +279,25 @@ nav >div:active{
     justify-content: center;
 }
 .item{
-    box-shadow: 2px 2px 8px black;
+    box-shadow: 1px 1px 10px black;
     background: linear-gradient(30deg, grey, white, grey, white, grey);
     text-align: center;
     max-width: 420ppx;
     height: auto;
-    font-family: font-3;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px;
+    font-size: 1rem;
 
 }
 .item >h4{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin-top: 15px;
     margin-bottom: 20px;
 }
 .item >p{
-    line-height: 1.4;
+    line-height: 1.3;
+    margin: 1px;
+    text-align: left;
 }
 #item1{
     display: flex;
@@ -306,7 +309,7 @@ nav >div:active{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #item1 >ul{
-    line-height: 1.2;
+    line-height: 1.4;
     font-size: 1rem;
     text-align: left;
     margin-left: 0px;
