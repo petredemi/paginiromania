@@ -223,14 +223,14 @@ nav >div:active{
     width: fit-content;
     text-wrap: nowrap;
     animation-name: runing;
-    animation-duration: 25s;
+    animation-duration: 40s;
     animation-iteration-count:infinite;
     animation-timing-function:linear;
     animation-direction: reverse;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .scrollstock{
-    animation-duration: 35s;
+    animation-duration: 50s;
 }
 .stock{
     display:inline-flex;
