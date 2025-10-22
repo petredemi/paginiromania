@@ -96,6 +96,13 @@ let img8 = document.querySelector('#img8')
 let simbol9 = document.querySelector('div.simbol9')
 let img9 = document.querySelector('#img9')
 
+let simbol10 = document.querySelector('div.simbol10')
+let img10 = document.querySelector('#img10')
+
+let simbol13 = document.querySelector('div.simbol13')
+let img13 = document.querySelector('#img13')
+
+
 let igr = './icons/trianglered.png'
 let igg = './icons/trianglegreen.png';
 let marketstatus = document.querySelector('div.marketstatus');
@@ -117,9 +124,10 @@ function localTime(){
 }
 setInterval(localTime, 1000);
 
-const symbols = [simbol1, simbol2, simbol3, simbol4, simbol5, simbol6, simbol7, simbol8, simbol9 ];
-const imgs = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
-const shares = ['AMZN', 'AAPL', 'GOOG', 'META', 'TSLA', 'NVDA', 'MSFT', 'AVGO', 'AMD', 'IBM'];
+const symbols = [simbol1, simbol2, simbol3, simbol4, simbol5, simbol6, simbol7, simbol8, simbol9, 
+    simbol10, simbol13];
+const imgs = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img13];
+const shares = ['AMZN', 'AAPL', 'GOOG', 'META', 'TSLA', 'NVDA', 'MSFT', 'AVGO', 'AMD', 'IBM', 'MU'];
 async function finnhubPrice(x, n){
     try{
         const response = await fetch(`https://finnhub.io/api/v1/quote?symbol=${x}&exchange=US&token=d2c3hr9r01qvh3vdtos0d2c3hr9r01qvh3vdtosg`, {mode:'cors'});

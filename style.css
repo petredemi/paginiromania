@@ -280,7 +280,7 @@ nav >div:active{
 }
 .item{
     box-shadow: 1px 1px 10px black;
-    background: linear-gradient(30deg, grey, white, grey, white, grey);
+    background: linear-gradient(30deg, rgb(197, 191, 191), white, rgb(199, 198, 198), white, rgb(192, 191, 191));
     text-align: center;
     max-width: 420ppx;
     height: auto;
