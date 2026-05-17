@@ -27,6 +27,7 @@ body{
     padding: 0px;
     margin: 0px;
     font-size: 18px;
+    letter-spacing: 1px;
 }
 .back{
     background-size:contain;
@@ -271,6 +272,24 @@ nav >div:active{
 .fronttext li{
     font-size: 1rem;
 }
+.newblog{
+    box-shadow: 1px 1px 6px black;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+.newblog >h4{
+    color: red;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px black;
+    margin-bottom: 10px;
+    margin-top: 1px;
+}
+.newblog >h4::first-letter{
+    font-size: 2rem;
+    color: blueviolet;
+}
+
 .items{
     display: grid;
     grid-template-columns: minmax(200px, 2fr) minmax(200px, 2fr);
