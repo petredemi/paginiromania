@@ -21,7 +21,7 @@ socket.addEventListener('message', function (event) {
   let pp = ee.data[0].p.toFixed(2)
   let price = pp.toString()
   if (coin == 'BINANCE:BTCUSDT'){
-        simbol11.textContent = ' $'+ price.substr(0, 3) + ',' + price.substr(3)
+        simbol11.textContent = ' $'+ Number(pp).toLocaleString() ///price.substr(0, 3) + ',' + price.substr(3)
         if (pp - btctrend > 0){ simbol11.style.backgroundColor = 'rgb(8, 200, 8)'}
         else if( pp - btctrend < 0) { simbol11.style.backgroundColor = 'rgba(251, 56, 56, 0.76)'}
         else{ simbol11.style.backgroundColor = 'white'}
