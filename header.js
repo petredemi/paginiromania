@@ -7,16 +7,16 @@ class SpecialHeader extends HTMLElement{
                 </button>
                 <nav>
                     <div class="acasa" >
-                        <a href="index.html">Acasa</a>
+                        <a href="index.html">acasa</a>
                     </div>
                     <div id="ex" class="exemple">
-                        <a href="./exemple.html">Produse</a>
+                        <a href="./exemple.html">oferte</a>
                     </div>
                     <div class="personal">
-                        <a href="./personal.html">Personal</a>
+                        <a href="./personal.html">despre noi</a>
                     </div>
                     <div class="contact">
-                        <a href="./contact.html">Contact</a>
+                        <a href="./contact.html">contact</a>
                     </div>
                 </nav>
             </div>        
