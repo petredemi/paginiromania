@@ -55,8 +55,10 @@ body{
     background-size:cover;
     background-color:rgba(46, 118, 75, 0.015);
 
-    background-color:rgfb(21, 94, 66);
-    background-color: rgb(29, 15, 39);
+    background-color:rgbd(21, 94, 66);
+    background-color: rgb(35, 17, 48);
+    background-color: rgbd(62, 44, 75);
+
     background-image: linear-gradientt(30deg, rgb(46, 118, 75) 60%,rgba(255, 255, 255));
 
     margin-bottom: 30px;
@@ -95,17 +97,17 @@ h3{
     margin-top: 1px;
     margin-bottom: 1px;
     height:fit-content;
-     text-shadow: 1px 1px 1px rgb(78, 5, 156);
+    text-shadow: 1px 1px 1px rgb(78, 5, 156);
 }
 
 .toppage{
-    background-color: rgba(35, 10, 52, 0.426);
+    background-color: rgba(35, 17, 48, 0.817);
     position: fixed;
     width: 100vw;
     z-index: 2;
     top: 0;
     margin-bottom: 0px;
-    transform: ;
+    border-bottom: 2px solid #64748b;
 }
 .top{
     padding: 5px;
@@ -184,11 +186,12 @@ nav >div:active{
     background-repeat: repeat;
 }
 .content{
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: auto;
     margin-top: 40px;
     min-height: 700px;
-    max-width: 100%;
+    max-width: 100%c;
     padding-top: 15px;
     background-image: linear-gradientl(90deg, rgba(255, 255, 255, 0.997)20%, rgba(255, 255, 255, 0.256),rgb(255, 255, 255));
 }
@@ -327,10 +330,11 @@ nav >div:active{
 
 .items{
     display: grid;
-    grid-template-columns: minmax(250px, 2fr) minmax(250px, 2fr) minmax(250px, 2fr);
-    gap: 40px;
+    grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
+    gap: 30px;
     padding: 10px;
     justify-content: center;
+    margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -469,12 +473,13 @@ footer{
     flex-direction: column;
     justify-content: center;
     min-height: 100px;
-    background-color: rgb(62, 44, 75);
+    background-color: rgb(35, 17, 48);
     margin: auto;
     color: white;
     bottom: 0;
     padding: 20px;
     font-size: 1rem;
+    border-top: 2px solid #64748b;
 }
 
 footer > p{
