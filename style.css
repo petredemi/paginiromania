@@ -330,7 +330,7 @@ nav >div:active{
 
 .items{
     display: grid;
-    grid-template-columns: minmax(200px, 2fr) minmax(200px, 2fr) minmax(200px, 2fr);
+    grid-template-columns: minmax(200px, 3fr) minmax(200px, 3fr) minmax(200px, 3fr);
     gap: 30px;
     padding: 10px;
     justify-content: center;
