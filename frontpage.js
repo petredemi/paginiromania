@@ -120,7 +120,7 @@ function localTime(){
         else if (hour == 4){ nyhour = 23}
         else{ nyhour =  hour - 5}
         const min = '0' + dd.getMinutes()
-        timedisplay.textContent = 'NewYork time: ' + nyhour+ ' : ' + min.slice(-2);
+        timedisplay.textContent = 'NewYork time: ' + nyhour+ ': ' + min.slice(-2) + " o'clock";
 }
 setInterval(localTime, 1000);
 

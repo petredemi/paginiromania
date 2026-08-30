@@ -10,7 +10,7 @@ class SpecialHeader extends HTMLElement{
                         <a href="index.html">acasa</a>
                     </div>
                     <div id="ex" class="exemple">
-                        <a href="./exemple.html">oferte</a>
+                        <a href="./exemple.html">servicii</a>
                     </div>
                     <div class="personal">
                         <a href="./personal.html">despre noi</a>
