@@ -32,6 +32,9 @@
       --bg-white: #ffffff;
       --border-color: #e2e8f0;
       --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+      --accent: #6366f1;
+      --accent-hover: #4f46e5;
+      --accent-gradient: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
     }
 body{
     padding: 0px;
@@ -97,7 +100,7 @@ h3{
     margin-top: 1px;
     margin-bottom: 1px;
     height:fit-content;
-    text-shadow: 1px 1px 1px rgb(78, 5, 156);
+    text-shadow: 1px 1px 1px rgb(75, 21, 133);
 }
 
 .toppage{
@@ -165,7 +168,10 @@ nav >div:active{
     max-width: 300px;
 }
 .logo-title span{
-    color: #8aacf4;
+    color: #2563eb;
+    background:var(--accent-gradient) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .menu{
     text-align: end;
@@ -312,7 +318,7 @@ nav >div:active{
     margin-top: 1px;
 }
 .newblog span{
-    color: #2563eb;
+    color: rgb(64, 131, 247);
 }
 .newblog >p{
     max-width: 600px;
