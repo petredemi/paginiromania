@@ -1,23 +1,38 @@
 :root {
-      --bg: #0b0f19;
-      --card-bg: rgba(255, 255, 255, 0.03);
-      --card-border: rgba(255, 255, 255, 0.08);
-      --accent: #6181e2;
-      --accent-hover: #5c55d7;
-      --accent-gradient: linear-gradient(135deg, #86bcf6 0%, #d12980 100%);
-      --text-main: #f3f4f6;
-      --text-muted: #9ca3af;
+      --primary: #0f172a;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --text: #334155;
+      --text-light: #64748b;
+      --bg: #ffffff;
+      --bg-alt: #f8fafc;
+      --border: #e2e8f0;
+      --radius: 12px;
     }
+.toppage{
+    background-color: #1f2636;
+}
 
 .h2{
-    background:var(--accent-gradientt) ;
-    -webkit-background-clip: textd;
-    -webkit-text-fill-color: transparendt;
-    color: #fcfbff;
+    background:var(--accent-gradient) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .personal{
-    background-color: cadetblue;
+    background-color: rgb(95, 158, 160);
 }
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--bg);
+    }
+
 .personalpage{
     max-width: 900px;
     padding: 20px;
@@ -25,59 +40,211 @@
     font-size: 1rem;
     margin-top: 110px;
     margin-bottom: 100px;
+
 }
-.nume{
-    font-size: 1.8rem;
-    color: rgb(27, 1, 50);
-    font-weight: 550;
-}
-.aboutme >img{
-    max-height: 240px;
-    float: left;
-    margin-right: 15px;
-    margin-top: 5px;
-    border: 2px solid black;
-    padding: 3px;
-}
-.personalpage  p, h4{
-    margin: 3px;
-    margin-top: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.personalpage h1{
-    color: rgb(31, 5, 50);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.personalpage > .email_phone{
-    margin: 1px;
-}
-.personalpage > img{
-    max-width: 160px;
-    max-height: fit-content;
-    width: 24%;
-    min-width: 80px;
-    object-fit: cover;
-    object-position: 50% 20% ;
-    border-radius: 50%;
-    padding: 3px;
-    border: 2px solid blue;
-    background-color: deepskyblue;
-    float: right;
-    margin-right: 20px;
-}
-.personalpage > .aboutme >p {
-    margin: 0px;
-    line-height: 1.5;
-    font-size: 0.85rem;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+    /* Header Secțiune */
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    /* Leader Card cu Portret */
+    .leader-card {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      background-color: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin: 3.5rem 0;
+    }
+
+    .leader-image-wrapper {
+      position: relative;
+      flex-shrink: 0;
+      width: 140px;
+      height: 140px;
+    }
+
+    .leader-portrait {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ffffff;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    }
+
+    .leader-content blockquote {
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .leader-meta h3 {
+      font-size: 1.1rem;
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 0.15rem;
+    }
+
+    .leader-meta p {
+      font-size: 0.9rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.35rem 0.85rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      background-color: #eff6ff;
+      border-radius: 50px;
+      margin-bottom: 1rem;
+    }
+
+    .section-header h1 {
+      font-size: 2.25rem;
+      color: var(--primary);
+      margin-bottom: 1.25rem;
+      line-height: 1.2;
+    }
+
+    .lead-text {
+      font-size: 1.15rem;
+      color: var(--text);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Citat Director */
+    .quote-box {
+      background-color: var(--bg-alt);
+      border-left: 4px solid var(--accent);
+      padding: 1.75rem 2rem;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 3rem 0;
+    }
+
+    .quote-box blockquote {
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .quote-box cite {
+      font-style: normal;
+      font-weight: 600;
+      color: var(--text-light);
+      display: block;
+    }
+
+    .quote-box cite span {
+      color: var(--primary);
+    }
+
+    /* Grid Servicii / Puncte Forte */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .feature-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 1.75rem;
+      border-radius: var(--radius);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.05);
+    }
+
+    .feature-card h3 {
+      font-size: 1.15rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .feature-card p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    /* Call To Action */
+    .cta-area {
+      text-align: center;
+      padding: 2.5rem;
+      background-color: var(--bg-alt);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+    }
+
+    .cta-area h2 {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--accent);
+      color: #ffffff;
+      padding: 0.85rem 1.75rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--accent-hover);
+    }
+
+    @media (max-width: 600px) {
+      .section-header h1 {
+        font-size: 1.85rem;
+      }
+      .lead-text {
+        font-size: 1rem;
+      }
+      .quote-box {
+        padding: 1.25rem;
+      }
+    }
+    @media (max-width: 768px) {
+      .leader-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 1.5rem;
+      }
+      .leader-image-wrapper {
+        width: 120px;
+        height: 120px;
+      }
+    }
 footer{
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
 @media(max-width: 1050px){
     .personalpage{
-        max-width: 650px;
+        max-width: 850px;
     }
 }
