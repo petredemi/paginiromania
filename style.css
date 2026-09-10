@@ -265,6 +265,7 @@ nav >div:active{
 .scrollstock{
     animation-duration: 50s;
 }
+
 .stock{
     display:inline-flex;
     align-items: center;
