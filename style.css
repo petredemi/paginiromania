@@ -121,6 +121,9 @@ h3{
     max-width: 1050px;
     margin: auto;
 }
+.top > a{
+    text-decoration: none;
+}
 nav{
     display: flex;
     justify-content: end;

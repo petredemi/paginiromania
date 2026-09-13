@@ -9,7 +9,7 @@
     promoveaza afacerea ta pe google">
     <meta name="keywords" content=" design, firma design, web designer in Londra, promovare online, pagini internet,
     agentie de web design in romana ">
-    <link rel="canonical" href="https://diawebdesign.com/contact">
+ <link rel="canonical" href="https://diawebdesign.com/contact">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
     <script src="./header.js" defer></script>
@@ -18,13 +18,15 @@
 <body>    
     <div class="toppage">
         <div class="top">
+          <a href="#">
             <div class="logo-title">
                 <div class="h1">DIA.</div>
                 <div class="h2">webdesign</div>
             </div>
-            <special-header></special-header>
+          </a>
+          <special-header></special-header>
         </div>
-        </div>
+    </div>
 <div class="contactpage">
     <main class="container">
         <header class="section-header">
@@ -81,7 +83,7 @@
       <!-- Formular de Contact -->
       <section  class="contact-form">
         <h2>Trimite un mesaj</h2>
-        <form id="contactForm" method="post"  name="contact" netlify>
+        <form id="contactForm" name="contact" netlify>
           <input type='hidden' name='form-name' value='contact' />
           <div class="form-row">
             <div class="form-group">
@@ -127,25 +129,26 @@
     </div>
     <special-footer></special-footer>
     <script>
-
           const banner = document.getElementById('confirmationBanner');
-          $("#contactForm").off('submit').submit(function(){
-            let name = $('#name').val()
-            let email = $('#email').val()
-            let phone = $('#phone').val()
-            let service = $('#service').val()
-            let message = $('#message').val()
+          $("#contactForm").off('submit').on('submit', function(e){
+            e.preventDefault()
+      //      let name = $('#name').val()
+      //      let email = $('#email').val()
+      //      let phone = $('#phone').val()
+      //      let service = $('#service').val()
+      //      let message = $('#message').val()
              $(this).ajaxSubmit({
               headers: {
                     "Accept": "application/json",
-                    "Content-Type": "application/x-www-form-urlencoded"
+     //               "Content-Type": "application/x-www-form-urlencoded",
+                    "ContentType": "application/json",
                 },
                data: {
-                    name: name,
-                    email: email,
-                    phone: phone,
-                    service:service,
-                    message: message,
+                  //  name: name,
+                  //  email: email,
+                  //  phone: phone,
+                  //  service:service,
+                  //  message: message,
                 },
                success: function(response){
                 console.log('succes'); 
